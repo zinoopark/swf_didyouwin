@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="chat narrow">
           <div className="my-chat">
-            <p>Hackathon's tmr</p>
+            <p>Hackathon&apos;s tmr</p>
             <p>I need some advice</p>
             <p>On my presentation cuz idk what to do</p>
           </div>
