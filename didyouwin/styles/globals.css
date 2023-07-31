@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "PPPangramSansNarrow";
+  src: url("../public/fonts/PPPangramSans.otf");
+  /* 이런식으로 weight를 지정해서 사용할 수도 있다!*/
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --bg-color: #52abf5;
+  --point-color: #c3fd50;
+  --font-color: #000000;
+}
+
+html,
+body {
+  background: var(--bg-color);
+  color: var(--font-color);
+  padding: 0;
+  margin: 0;
+  font-family: "PPPangramSansNarrow";
+  font-size: 14px;
+  z-index: -2;
+}
+
+.narrow {
+  font-family: Avenir;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+button {
+  border: none;
+  background: var(--point-color);
+  padding: 1rem 1.5rem;
+  border-radius: 9999px;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+button:hover {
+  cursor: pointer;
+  background: #a3f23f;
+}
