@@ -58,6 +58,17 @@ export default function Home() {
       </div>
       <style jsx>
         {`
+          @keyframes float {
+            0% {
+              transform: translateY(0px);
+            }
+            50% {
+              transform: translateY(50px);
+            }
+            100% {
+              transform: translateY(0px);
+            }
+          }
           .chat {
             position: relative;
             z-index: 1;
@@ -144,6 +155,7 @@ export default function Home() {
             right: -1rem;
             height: 35rem;
             margin-top: -9rem;
+            animation: float 5s infinite;
           }
 
           .img-medal {
