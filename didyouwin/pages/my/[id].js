@@ -5,12 +5,12 @@ import ConfettiExplosion from "react-confetti-explosion";
 import { useEffect, useState } from "react";
 import { nftList } from "../../competition";
 
-export default function detail() {
+export default function Detail() {
+  const [isExplosion, setIsExplosion] = useState(false);
+  const [medalAnimate, setMedalAnimate] = useState(false);
   const router = useRouter();
   const id = router.query.id;
   const nft = nftList[id - 1];
-  const [isExplosion, setIsExplosion] = useState(false);
-  const [medalAnimate, setMedalAnimate] = useState(false);
 
   const goBack = () => {
     router.back();
