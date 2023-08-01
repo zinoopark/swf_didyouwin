@@ -128,10 +128,18 @@ export default function Chat() {
           onKeyPress={handleInputKeyPress}
           fullWidth
           id="fullWidth"
-          color="success"
         />
-
-        {/* <button onClick={handleSendMessage}>Send</button> */}
+        <button
+          style={{
+            width: "100%",
+            borderRadius: "0",
+            backgroundColor: "gray",
+            color: "white",
+          }}
+          onClick={handleSendMessage}
+        >
+          Send
+        </button>
       </div>
       <style global jsx>{`
         .your-chat p {
@@ -141,6 +149,7 @@ export default function Chat() {
           padding: 0.5rem 1rem;
           border-radius: 1rem;
           margin-right: auto;
+          white-space: pre-wrap;
         }
 
         .my-chat p {
@@ -150,11 +159,12 @@ export default function Chat() {
           padding: 0.5rem 1rem;
           border-radius: 1rem;
           margin-left: auto;
+          white-space: pre-wrap;
         }
         .input {
           padding: 1px;
           position: absolute;
-          bottom: 1px;
+          bottom: 0;
           left: 0;
           right: 0;
         }
