@@ -1,7 +1,10 @@
 import Header from "../components/Header";
 import Link from "next/link";
+import useAuth from "../hooks/useAuth";
 
 export default function Home() {
+  const { loggedIn, login } = useAuth();
+
   return (
     <div className="landing-page">
       <Header />

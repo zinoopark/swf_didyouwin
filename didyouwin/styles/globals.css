@@ -59,9 +59,10 @@ h5 {
 button {
   border: none;
   background: var(--point-color);
+  color: #000;
   padding: 1rem 1.5rem;
   border-radius: 9999px;
-  font-family: inherit;
+  font-family: Avenir;
   transition: all 0.3s;
 }
 button:hover {

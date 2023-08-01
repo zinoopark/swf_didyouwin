@@ -1,13 +1,30 @@
 import Link from "next/link";
+import useAuth from "../hooks/useAuth";
+import LogoutIcon from "@mui/icons-material/Logout";
 
 export default function Header() {
+  const { loggedIn, login } = useAuth();
+
+  const handleClickLogin = () => {
+    login();
+  };
+  const handleClickLogout = () => {
+    logout();
+  };
+
   return (
     <div className="header">
       <Link href="/">
         <h1>Did You Win?</h1>
       </Link>
       <div>
-        <button>Connect Wallet</button>
+        {loggedIn ? (
+          <button onClick={handleClickLogout}>
+            <LogoutIcon />
+          </button>
+        ) : (
+          <button onClick={handleClickLogin}>Connect Wallet</button>
+        )}
       </div>
       <style jsx>
         {`
