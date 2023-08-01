@@ -47,6 +47,9 @@ export default function Index() {
       </div>
       <style global jsx>{`
         .chat-title {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
         }
         .chat-list li {
           padding: 1rem;
@@ -56,6 +59,10 @@ export default function Index() {
           align-items: center;
           gap: 1rem;
           padding: 0.5rem;
+        }
+        h3,
+        p {
+          margin: 0;
         }
 
         .chat-img {
