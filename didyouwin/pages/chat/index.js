@@ -28,7 +28,7 @@ export default function Index() {
         <ul>
           {nftList.map((nft) => {
             return (
-              <li key={nft.title}>
+              <li className="chat-li" key={nft.title}>
                 <Link href={`/chat/${nft.title}`}>
                   <div className="chat">
                     <div className="chat-img">
@@ -36,6 +36,7 @@ export default function Index() {
                     </div>
                     <div className="chat-title">
                       <h3>{nft.title}</h3>
+                      <p>{nft.description}</p>
                     </div>
                   </div>
                 </Link>
@@ -45,19 +46,25 @@ export default function Index() {
         </ul>
       </div>
       <style global jsx>{`
+        .chat-title {
+        }
         .chat-list li {
           padding: 1rem;
         }
+        .chat {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: 0.5rem;
+        }
 
         .chat-img {
+          width: max-content;
+        }
+        .chat-img img {
           width: 5rem;
           height: 5rem;
           border-radius: 1rem;
-          overflow: hidden;
-        }
-        .chat-img img {
-          width: 100%;
-          height: 100%;
           object-fit: cover;
         }
 

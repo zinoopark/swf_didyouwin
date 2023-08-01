@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@walletconnect/legacy-client": "^2.0.0",
+    "@walletconnect/sign-client": "^2.9.2"
+  }
+}
