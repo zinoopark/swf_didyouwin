@@ -20,7 +20,7 @@ const useAuth = () => {
     authenticateUser,
   } = useContext(AuthContext);
 
-  console.log(loggedIn, login);
+  // console.log(loggedIn, login);
   return {
     loggedIn,
     login,

@@ -62,7 +62,7 @@ export const AuthProvider = ({ children }) => {
           torusWalletOpts: {},
           walletInitOptions: {
             whiteLabel: {
-              theme: { isDark: true, colors: { primary: "#00a8ff" } },
+              theme: { isDark: false, colors: { primary: "#c3fd50" } },
               logoDark: "https://web3auth.io/images/w3a-L-Favicon-1.svg",
               logoLight: "https://web3auth.io/images/w3a-D-Favicon-1.svg",
             },
@@ -312,7 +312,7 @@ export const AuthProvider = ({ children }) => {
     <AuthContext.Provider value={contextValue}>
       {children}
       <div id="console" style={{ whiteSpace: "pre-line" }}>
-        <p style={{ whiteSpace: "pre-line" }}>hihihi</p>
+        <p style={{ whiteSpace: "pre-line", textAlign: "center" }}></p>
       </div>
     </AuthContext.Provider>
   );
