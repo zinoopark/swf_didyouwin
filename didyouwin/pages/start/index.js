@@ -6,27 +6,27 @@ const slideList = [
   {
     title: "Sports",
     img_url: "/imgs/person_bicycle.png",
-    link_url: "/event/sports",
+    link_url: "/chat?tab=sports",
   },
   {
     title: "Programming",
     img_url: "/imgs/robot.png",
-    link_url: "/event/programming",
+    link_url: "/chat?tab=programming",
   },
   {
     title: "Climate",
     img_url: "/imgs/globe.png",
-    link_url: "/start",
+    link_url: "/chat?tab=climate",
   },
   {
     title: "Art",
     img_url: "/imgs/person_star.png",
-    link_url: "/start",
+    link_url: "/chat?tab=art",
   },
   {
     title: "Writing",
     img_url: "/imgs/book_side.png",
-    link_url: "/start",
+    link_url: "/chat?tab=writing",
   },
 ];
 

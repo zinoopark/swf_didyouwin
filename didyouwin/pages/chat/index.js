@@ -17,7 +17,10 @@ export default function Index() {
         <ul>
           {typeList.map((type) => {
             return (
-              <li className={`${type === tab ? "active" : ""}`} key={type}>
+              <li
+                className={`${type.toLowerCase() === tab ? "active" : ""}`}
+                key={type}
+              >
                 <Link href={`/chat?tab=${type}`}>{type}</Link>
               </li>
             );
@@ -52,7 +55,7 @@ export default function Index() {
           gap: 0.5rem;
         }
         .chat-list li {
-          padding: 1rem;
+          padding: 0.5rem 1rem;
         }
         .chat {
           display: flex;

@@ -4226,7 +4226,7 @@
   "resolved" "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
   "version" "1.8.1"
 
-"socket.io-client@^4.6.1":
+"socket.io-client@^4.6.1", "socket.io-client@^4.7.1":
   "integrity" "sha512-Qk3Xj8ekbnzKu3faejo4wk2MzXA029XppiXtTF/PkbTg+fcwaTw1PlDrTrrrU4mKoYC4dvlApOnSeyLCKwek2w=="
   "resolved" "https://registry.npmjs.org/socket.io-client/-/socket.io-client-4.7.1.tgz"
   "version" "4.7.1"

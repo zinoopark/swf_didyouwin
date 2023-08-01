@@ -159,6 +159,7 @@ export const AuthProvider = ({ children }) => {
       return;
     }
     const user = await web3auth.getUserInfo();
+    return user;
     uiConsole(user);
   };
 
