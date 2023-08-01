@@ -69,3 +69,20 @@ button:hover {
   cursor: pointer;
   background: #a3f23f;
 }
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+ul,
+ol,
+li,
+a,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
