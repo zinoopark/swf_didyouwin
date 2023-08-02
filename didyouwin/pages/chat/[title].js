@@ -11,10 +11,22 @@ import io from "socket.io-client";
 
 const socket = io("http://15.164.96.192:3232");
 
+// const yourChat = [
+//   {
+//     username: "YONNIE",
+//     text: "I can help!",
+//   },
+//   {
+//     username: "YONNIE",
+//     text: "I won 1st prize for the mass-adoption track last year",
+//   },
+// ];
+
 export default function Chat() {
   const [messages, setMessages] = useState([]);
   const [messageInput, setMessageInput] = useState("");
   const [username, setUsername] = useState("");
+  const [index, setIndex] = useState(0);
 
   const { loggedIn, getUserInfo } = useAuth();
   if (loggedIn && username === "")
@@ -99,10 +111,7 @@ export default function Chat() {
                       {message.username}
                     </h4>
                   )}
-                  <p
-                    className="narrow"
-                    style={{ textAlign: "right", marginBlock: "5px" }}
-                  >
+                  <p className="narrow" style={{ marginBlock: "5px" }}>
                     {message.text}
                   </p>
                 </div>
@@ -121,6 +130,13 @@ export default function Chat() {
           })}
         </div>
       </div>
+      {/* <div
+        className="hide-btn"
+        onClick={() => {
+          setMessages((prevMessages) => [...prevMessages, yourChat[index]]);
+          setIndex((prevIndex) => prevIndex + 1);
+        }}
+      ></div> */}
       <div className="input">
         <TextField
           value={messageInput}
@@ -142,6 +158,13 @@ export default function Chat() {
         </button>
       </div>
       <style global jsx>{`
+        .hide-btn {
+          position: absolute;
+          right: 0;
+          bottom: 100px;
+          width: 20px;
+          height: 20px;
+        }
         .your-chat p {
           max-width: 80%;
           background: var(--point-color);

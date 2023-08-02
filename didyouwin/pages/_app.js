@@ -8,10 +8,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <AuthProvider>
       <Head>
-        <meta
+        {/* <meta
           http-equiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
-        ></meta>
+        ></meta> */}
       </Head>
       <div className="next-body">
         <Component {...pageProps} />
